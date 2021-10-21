@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "module": "commonjs", /**specify which module manager to use in the generated JavaScript code.*/
+    "esModuleInterop": true,
+    "target": "es6", /*which ECMAScript version to use*/
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "dist", //*where to output the “vanilla” JavaScript code
+    "baseUrl": ".", /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  }, /* Specify a set of entries that re-map imports to additional lookup locations. */
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ]
+}
